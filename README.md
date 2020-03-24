@@ -1,7 +1,8 @@
 # ConsoleNHb
 ## Observações do Nhibernate
- * Os arquivos <Model>.hbm.xml devem estar como Embedded Resource, é o mapeamento
+ * Os arquivos de mapeamento \<Model\>.hbm.xml devem estar como Embedded Resource
  * O arquivo hibernate.cfg.xml deve estar como Content e Copy Always, ele contem informações de conexão com o banco e do dialeto
+ * Tem um arquivo opcional que é o schema do Nhibernate só para o Visual Studio auxiliar, mas eu não coloquei
  
 ## Banco de Dados
 NOME DO BANCO: MeuBanco
@@ -21,6 +22,6 @@ NOME DO BANCO: MeuBanco
 ```
 
 ## Classes
-* SessionProvider -> Centraliza a criação da Sessão do NHibernate, utilizo uma instancia por banco;
-* RepositorioBase<T> -> Exemplo basico de um Crud Generico;
-* ProdutoRepositorio -> Exemplo Basico de uma busca com Query
+* SessionProvider -> Centraliza a criação da Sessão do NHibernate, utilizo uma instancia por banco
+* RepositorioBase<T> -> Exemplo básico de um Crud Genérico
+* ProdutoRepositorio -> Exemplo básico de uma busca com LINQ
